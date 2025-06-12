@@ -55,8 +55,8 @@ using the following method:
     ```python
     base[mask] = base[mask] * (1 - alpha) + overlay[mask] * alpha
     ```
-    > [!NOTE]
-    > `alpha` is the fractional opacity whereas ova is supplied as a percentage
+> [!NOTE]
+> `alpha` is the fractional opacity whereas ova is supplied as a percentage
 
 8. repeat steps 4 to 8 for each overlay supplied
 
