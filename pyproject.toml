@@ -1,0 +1,28 @@
+[project]
+name = "rgboverlay"
+version = "1.0.0"
+description = "Create NIfTI RGB24 images by combining a base image with one or more overlay images"
+readme = "README.md"
+authors = [
+    { name = "Stephen Wastling", email = "stephen.wastling@nhs.net" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "nibabel>=5.3.2",
+    "numpy>=2.3.0",
+]
+
+[project.scripts]
+rgboverlay = "rgboverlay.rgboverlay:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "coverage>=7.8.2",
+    "pytest>=8.4.0",
+    "pytest-console-scripts>=1.4.1",
+    "ruff>=0.11.13",
+]
