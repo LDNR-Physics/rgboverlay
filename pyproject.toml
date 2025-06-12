@@ -1,6 +1,6 @@
 [project]
 name = "rgboverlay"
-version = "1.0.0"
+version = "1.0.2"
 description = "Create NIfTI RGB24 images by combining a base image with one or more overlay images"
 readme = "README.md"
 authors = [
