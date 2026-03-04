@@ -426,8 +426,8 @@ def main():
 
     nii_obj = nib.nifti1.Nifti1Image(cast2rgb(output_4d_rgb), affine)
     print("adding sform and qform")
-    nii_obj.set_qform(affine, code=1)
-    nii_obj.set_sform(affine, code=1)
+    nii_obj.set_qform(affine, code=2)
+    nii_obj.set_sform(affine, code=2)
     nii_obj.to_filename(args.out.resolve())
 
 
