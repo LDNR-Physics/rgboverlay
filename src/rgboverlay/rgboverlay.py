@@ -425,6 +425,9 @@ def main():
             output_4d_rgb = blend(output_4d_rgb, overlay_4d_rgb, mask, ova)
 
     nii_obj = nib.nifti1.Nifti1Image(cast2rgb(output_4d_rgb), affine)
+    print("adding sform and qform")
+    nii_obj.set_qform(affine, code=1)
+    nii_obj.set_sform(affine, code=1)
     nii_obj.to_filename(args.out.resolve())
 
 
