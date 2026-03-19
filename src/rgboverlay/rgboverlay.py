@@ -291,6 +291,25 @@ def main():
         "HI i.e. they appear white",
         required=True,
     )
+    # JSedit
+    # base_group.add_argument(
+    #     "-pl",
+    #     type=str,
+    #     metavar="PLANE",
+    #     help="define the primary plane of the 3D acquisition. "
+    #          "This tells the script to reconstruct in all three planes "
+    #          "and check the orientation data of the primary plane "
+    #          "matches the RGB overlay in that plane, choose from {%(choices)s}",
+    #
+    #     action="append",
+    #     choices=[
+    #         "TRA",
+    #         "COR",
+    #         "SAG",
+    #     ],
+    #     required=False,
+    # )
+
 
     overlay_group = parser.add_argument_group(
         "overlay image arguments (repeat the four arguments for each overlay)"
