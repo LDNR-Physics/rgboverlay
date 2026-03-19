@@ -27,7 +27,7 @@ voxels with values below LO in the overlay image appear transparent i.e. just
 the base image is shown whereas voxels with values above HI are clipped to HI 
 so they appear with the brightest colour in the chosen colour map
 -  `-ovc`: colour map, choose from {red-yellow, blue-lightblue, red, blue, 
-green, yellow, pink, cool}
+green, yellow, pink, cool, orange, purple}
 - `-ova`: overlay opacity (percentage: 0-100)
 
 ## Output file arguments:

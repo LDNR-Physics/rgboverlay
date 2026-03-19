@@ -160,6 +160,14 @@ def colourmap_lut(cmap_name):
         red = np.arange(0, 256)
         green = np.arange(256, 0, -1)
         blue = np.full(256, 255)
+    elif cmap_name == "purple": #JS edit
+        red = np.linspace(100, 255, 256)
+        green = np.zeros(256)
+        blue = np.linspace(100, 255, 256)
+    elif cmap_name == "orange": #JS edit
+        red = np.linspace(200, 255, 256)       # High red, from strong to max
+        green = np.linspace(50, 165, 256)      # Moderate green increasing to brighten orange
+        blue = np.zeros(256)
     else:
         raise ValueError("colour map name not recognised")
 
@@ -326,6 +334,8 @@ def main():
             "yellow",
             "pink",
             "cool",
+            "purple", #JS edit
+            "orange", #JS edit
         ],
         required=True,
     )
