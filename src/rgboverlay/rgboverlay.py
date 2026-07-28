@@ -140,7 +140,7 @@ def colourmap_lut(cmap_name):
         red = np.linspace(100, 255, 256)
         green = np.zeros(256)
         blue = np.zeros(256)
-    elif cmap_name == "blue":
+    elif cmap_name == "dark-blue":
         red = np.zeros(256)
         green = np.zeros(256)
         blue = np.linspace(100, 255, 256)
@@ -168,6 +168,18 @@ def colourmap_lut(cmap_name):
         red = np.linspace(200, 255, 256)       # High red, from strong to max
         green = np.linspace(50, 165, 256)      # Moderate green increasing to brighten orange
         blue = np.zeros(256)
+    elif cmap_name == "light-blue": #JS edit
+        red = np.linspace(170, 255, 256)
+        green = np.linspace(255, 165, 256)
+        blue = np.linspace(255, 255, 256)
+    elif cmap_name == "middle-blue": #JS edit
+        red = np.zeros(256)
+        green = np.linspace(170, 255, 256)
+        blue = np.linspace(255, 255, 256)
+    elif cmap_name == "light-blue-TEST": #JS edit
+        red = np.linspace(170, 255, 256)
+        green = np.linspace(255, 255, 256)
+        blue = np.linspace(255, 255, 256)
     else:
         raise ValueError("colour map name not recognised")
 
@@ -291,7 +303,7 @@ def main():
         "HI i.e. they appear white",
         required=True,
     )
-    # JSedit
+    # JSedit - code I added to test orientation matches, but is defunct/needs more development
     # base_group.add_argument(
     #     "-pl",
     #     type=str,
@@ -348,13 +360,16 @@ def main():
             "red-yellow",
             "blue-lightblue",
             "red",
-            "blue",
+            "dark-blue",
             "green",
             "yellow",
             "pink",
             "cool",
             "purple", #JS edit
             "orange", #JS edit
+            "light-blue", #JS edit
+            "middle-blue", #JS edit
+            "light-blue-TEST", #JS edit
         ],
         required=True,
     )
