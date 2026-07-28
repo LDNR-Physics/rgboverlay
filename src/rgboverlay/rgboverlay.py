@@ -168,15 +168,11 @@ def colourmap_lut(cmap_name):
         red = np.linspace(200, 255, 256)       # High red, from strong to max
         green = np.linspace(50, 165, 256)      # Moderate green increasing to brighten orange
         blue = np.zeros(256)
-    elif cmap_name == "light-blue": #JS edit
-        red = np.linspace(170, 255, 256)
-        green = np.linspace(255, 165, 256)
-        blue = np.linspace(255, 255, 256)
     elif cmap_name == "middle-blue": #JS edit
         red = np.zeros(256)
         green = np.linspace(170, 255, 256)
         blue = np.linspace(255, 255, 256)
-    elif cmap_name == "light-blue-TEST": #JS edit
+    elif cmap_name == "light-blue": #JS edit
         red = np.linspace(170, 255, 256)
         green = np.linspace(255, 255, 256)
         blue = np.linspace(255, 255, 256)
@@ -369,7 +365,6 @@ def main():
             "orange", #JS edit
             "light-blue", #JS edit
             "middle-blue", #JS edit
-            "light-blue-TEST", #JS edit
         ],
         required=True,
     )
